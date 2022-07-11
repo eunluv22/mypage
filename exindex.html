@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="OO의 블로그"/>
+    <meta property="og:description" content="제가 만든 첫 번쨰 블로그에 초대합니다."/>
+    <meta property="og:image" content="pfp.jpg"/>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>OO - 블로그</title>
+    <style>
+        *{
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        body{
+            background-color: rgb(255, 217, 147);
+        }
+        .container{
+            margin: 20px auto 20px auto;
+            max-width : 900px;
+            max-height : 500px;
+        }
+        .header{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            border-bottom: white solid 1px;
+        }
+        .profile{
+            flex-grow: 1;
+        }
+        .info{
+            flex-grow: 2;
+        }
+        .pfp{
+            width: 150px;
+            height: 150px;
+            
+            background-image: url('pfp.jpg');
+            background-position: center;
+            background-size: cover;
+
+            margin: auto;
+
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+        .info>h1{
+            font-size: 25px;
+        }
+        .mybtn{
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+
+            display: inline-block;
+            width: 90px;
+            height: 30px;
+            margin-right: 15px;
+
+            border-radius: 8px;
+
+            background-color: rgb(243, 168, 56);
+            color: white;
+        }
+        .mybtn:hover{
+            color: rgb(243, 168, 56);
+            background-color: white;
+        }
+        .content{
+            padding: 20px 10px 20px 10px;
+        }
+        @media screen and (max-width: 500px) {
+            .header{
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <div class="pfp"></div>
+            </div>
+            <div class="info">
+                <h1>이름</h1>
+                <p>한 줄 자기소개</p>
+                <div class="linklist">
+                    <a class="mybtn" href="#" target="_blank">링크1</a>
+                    <a class="mybtn" href="#" target="_blank">링크2</a>
+                    <a class="mybtn" href="#" target="_blank">링크3</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="image1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">제목1</h5>
+                      <p class="card-text">내용입력하자</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="image2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">제목2</h5>
+                      <p class="card-text">와아아아아아</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card  h-100">
+                    <img src="image3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">제목3</h5>
+                      <p class="card-text">패트와매트</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
